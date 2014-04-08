@@ -1,0 +1,50 @@
+{
+  "name": "Enjin",
+  "description": "A small angularjs module generator",
+  "keywords": [],
+  "version": "0.0.1",
+  "homepage": "https://github.com/ebertsch/Enjin",
+  "author": [
+    {
+      "name": "ebertsch",
+      "email": "ebertsch@gmail.com",
+      "web": "https://github.com/ebertsch"
+    }
+  ],
+  "repository": [
+    {
+      "type": "git",
+      "url": "https://github.com/ebertsch/Enjin.git"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/ebertsch/Enjin/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/ebertsch/Enjin/blob/master/LICENSE"
+    }
+  ],
+  "main": "lib/enjin",
+  "engines": {
+    "node": "0.8"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "~0.3.12"
+  },
+  "preferGlobal": "true",
+  "bin": {
+    "enjin": "lib/Enjin.js"
+  },
+  "dependencies": {
+    "mkdirp": "~0.3.5",
+    "handlebars": "~2.0.0-alpha.2",
+    "cli": "~0.4.5",
+    "async": "~0.7.0",
+    "inflection": "~1.3.5"
+  }
+}
