@@ -1,0 +1,20 @@
+<a href="/{{singularize moduleName}}/create" class="btn btn-primary"></a>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Type</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="{{singularize moduleName}} in {{pluralize moduleName}}">
+            <td>\{{ {{singularize moduleName}}.{{singularize moduleName}}Id }}</td>
+            <td>\{{ {{singularize moduleName}}.{{singularize moduleName}}Type | {{singularize moduleName}}Type }}</td>
+            <td>
+                <button type="button" ng-click="edit({{singularize moduleName}})" class="btn btn-danger">Edit</button>
+                <button type="button" ng-click="remove({{singularize moduleName}})" class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,31 @@
+<div ng-form="{{singularize moduleName}}Form">
+    <div>
+        <h1 ng-hide="{{singularize moduleName}}.{{singularize moduleName}}Id">Add {{singularize moduleName}}</h1>
+
+        <h1 ng-show="{{singularize moduleName}}.{{singularize moduleName}}Id">Edit {{singularize moduleName}}</h1>
+    </div>
+    <div>
+        <div class="row">
+            <div class="col-md-12 form-horizontal">
+                <fieldset ng-disabled="processingRequest">
+                    <div class="form-group"
+                         ng-class="{'has-error required': {{singularize moduleName}}Form.{{singularize moduleName}}Text.$dirty && {{singularize moduleName}}Form.{{singularize moduleName}}Text.$invalid }">
+                        <div class="form-group">
+                            <label for="{{singularize moduleName}}Text" class="col-sm-2 control-label">Text</label>
+
+                            <div class="col-sm-10">
+                                <textarea class="form-control" name="{{singularize moduleName}}Text" id="{{singularize moduleName}}Text"
+                                          placeholder="Enter Text..." required="required"
+                                          ng-model="{{singularize moduleName}}.Content"></textarea>
+                                <span class="label label-danger in-column" ng-if="{{singularize moduleName}}Form.{{singularize moduleName}}Text.$dirty && {{singularize moduleName}}Form.{{singularize moduleName}}Text.$invalid" >Required</span>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    <div class="">
+        <button class="btn btn-primary" ng-disabled="{{singularize moduleName}}Form.$pristine || {{singularize moduleName}}Form.$invalid" ng-click="save({{singularize moduleName}})">Save</button>
+    </div>
+</div>
