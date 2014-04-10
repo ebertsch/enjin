@@ -2,7 +2,7 @@
   "name": "enjin",
   "description": "A small angularjs module generator",
   "keywords": [],
-  "version": "0.0.2",
+  "version": "0.0.4",
   "homepage": "https://github.com/ebertsch/Enjin",
   "author": [
     {
@@ -45,6 +45,7 @@
     "handlebars": "~2.0.0-alpha.2",
     "cli": "~0.4.5",
     "async": "~0.7.0",
-    "inflection": "~1.3.5"
+    "inflection": "~1.3.5",
+    "rimraf": "~2.2.6"
   }
 }
