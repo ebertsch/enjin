@@ -9,8 +9,8 @@ enjin [appname] [modulename]
 This will generate angular module using the [appname] and [moduleName]
 enjin SampleApp Issues will generate files in the following fashion
 
-'''
+```js
 angular.module('SampleApp.Issues.controllers.IssuesListController', []) {
 
 }
-'''
+```
