@@ -2,7 +2,7 @@
   "name": "enjin",
   "description": "A small angularjs module generator",
   "keywords": [],
-  "version": "0.0.4",
+  "version": "0.0.6",
   "homepage": "https://github.com/ebertsch/Enjin",
   "author": [
     {
@@ -11,12 +11,10 @@
       "web": "https://github.com/ebertsch"
     }
   ],
-  "repository": [
-    {
+  "repository": {
       "type": "git",
       "url": "git://github.com/ebertsch/Enjin.git"
-    }
-  ],
+    },
   "bugs": {
     "url": "https://github.com/ebertsch/Enjin/issues"
   },
